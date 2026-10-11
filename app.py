@@ -50,9 +50,7 @@ def predict(student: Student):
         student.communication_skills,
     ]]
 
-    prediction = int(model.predict(pd.DataFrame(
-        values, columns=FEATURES
-    ))[0])
+    prediction = int(model.predict(values)[0])
 
     return {
         "prediction": "Placed" if prediction == 1 else "Not Placed"

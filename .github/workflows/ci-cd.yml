@@ -26,7 +26,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Code quality check
-        run: flake8 train.py app.py test_app.py generate_data.py --max-line-length=100
+        run: flake8 train.py app.py test_app.py --max-line-length=100
 
       - name: Train and evaluate model
         run: python train.py

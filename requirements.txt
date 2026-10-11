@@ -1,9 +1,5 @@
-pandas
-numpy
-scikit-learn
-joblib
+
 fastapi
 uvicorn
-pytest
-httpx
-flake8
+scikit-learn
+joblib

@@ -25,9 +25,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Generate dataset if needed
-        run: python generate_data.py
-
       - name: Code quality check
         run: flake8 train.py app.py test_app.py generate_data.py --max-line-length=100
 
